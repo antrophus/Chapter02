@@ -13,7 +13,24 @@ public class Song {
 	
 	
 	//생성자
+	public Song() {
+		
+	}
 	
+	public Song(String artist, String title, String album, String composer, int year, int track) {
+		this.artist = artist;
+		this.title = title;
+		this.album = album;
+		this.composer = composer;
+		this.year = year;
+		this.track = track;
+		
+	}
+	
+	
+	
+	
+	// Alt + Shift + s : Generate Getter and Setter 자동 생성
 	//메소드 getter - setter
 	public void setArtist(String artist) {
 		this.artist = artist;
@@ -67,18 +84,17 @@ public class Song {
 		return track;
 	}
 	
-	public void showInfo() {
-		System.out.println( artist + ", " + title + " ( " + album + ", " + year + ", " + track +"번 track, " + composer + " 작곡" + " )\t" );
+//	public void showInfo() {
+//		System.out.println( artist + ", " + title + " ( " + album + ", " + year + ", " + track +"번 track, " + composer + " 작곡" + " )\t" );
+//	}
+
+	@Override
+	public String toString() {
+		return "Song [artist=" + artist + ", title=" + title + ", album=" + album + ", composer=" + composer + ", year="
+				+ year + ", track=" + track + "]";
 	}
 	
-	}
 	
-	
-	
-	
-	
-	//메소드 setter
-	
-	
+}
 
 
