@@ -1,4 +1,4 @@
-package com.javaex.Ex13;
+package com.javaex.ex13;
 
 public class TV {
 

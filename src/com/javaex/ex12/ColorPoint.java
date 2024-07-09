@@ -1,4 +1,4 @@
-package com.javaex.Ex12;
+package com.javaex.ex12;
 
 public class ColorPoint extends Point {
 	
